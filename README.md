@@ -20,7 +20,7 @@ This is a solution to the [Clipboard landing page challenge on Frontend Mentor](
 ### Links
 
 - Solution URL: [Github](https://github.com/oussamaelomri/3-clipboard-landing-page-master)
-- Live Site URL: [Live]()
+- Live Site URL: [Live](https://oussamaelomri.github.io/3-clipboard-landing-page-master/)
 
 ## My process
 
