@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+/* Start Variable */
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+/* end Variable */
+
+/* Start Global Rules */
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+}
+body {
+    min-height: 100vh;
+    background-image: url(images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 1.125rem;
+}
+@media (max-width: 47.9375rem) {
+    body {
+        background-image: url(images/bg-header-mobile.png);
+    }
+}
+header {
+    max-width: 37.5rem;
+    min-width: 15.625rem;
+    padding-inline: 0.9375rem;
+    margin: 3.75rem auto;
+    text-align: center;
+}
+header h1,
+header h2 {
+    color: var(--Dark-Grayish-Blue);
+}
+header p {
+    color: var(--Grayish-Blue);
+    margin-block: 1.25rem;
+}
+.copyright {
+    font-size: 6.25rem;
+    color: var(--Strong-Cyan);
+}
+section {
+    margin-block: 7.5rem;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--Dark-Grayish-Blue);
+}
+/* End Global Rules */
+
+/* Start Header */
+header .buttons {
+    margin-top: 3.125rem;
+}
+header .buttons button {
+    border: none;
+    cursor: pointer;
+    padding: 1.25rem 2.1875rem;
+    border-radius: 3.125rem;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 0.0625rem;
+    font-family: inherit;
+}
+header .buttons button:not(:last-of-type) {
+    margin-right: 1.25rem;
+}
+header .buttons button:first-of-type {
+    background-color: var(--Strong-Cyan);
+    border-bottom: 0.1875rem solid hsl(171deg 92% 29%);
+    border-left: 0.125rem solid hsl(171deg 92% 29%);
+    border-right: 0.125rem solid hsl(171deg 92% 29%);
+    transition: .3s;
+}
+header .buttons button:hover:first-of-type{
+    box-shadow: hsl(171deg 92% 29% / 30%) 0rem 0.5rem 1.5rem;
+    border-color: var(--Strong-Cyan);
+}
+header .buttons button:last-of-type {
+    background-color: var(--Light-Blue);
+    border-bottom: 0.1875rem solid rgb(53 65 155 / 69%);
+    border-left: 0.125rem solid rgb(53 65 155 / 69%);
+    border-right: 0.125rem solid rgb(53 65 155 / 69%);
+    transition: .3s;
+}
+header .buttons button:hover:last-of-type {
+    box-shadow: rgb(53 65 155 / 30%) 0rem 0.5rem 1.5rem;
+    border-color: var(--Light-Blue);
+}
+@media (max-width: 47.9375rem) {
+    header .buttons button {
+        width: 14.375rem;
+    }
+    header .buttons button:not(:last-of-type) {
+        display: block;
+        margin-inline: auto;
+        margin-bottom: 1.25rem;
+    }
+}
+/* End Header */
+/* Start Track Snippets Section */
+.track-snippets .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+.track-snippets .grid img {
+    max-width: 100%;
+    transform: translateX(-1.875rem);
+}
+.track-snippets .grid .infos {
+    padding: 2.5rem;
+}
+.track-snippets .grid .infos .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.track-snippets .grid .infos .box:not(:last-of-type) {
+    margin-bottom: 3.75rem;
+}
+.track-snippets .grid .infos .box h3 {
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 1.25rem;
+}
+.track-snippets .grid .infos .box p {
+    color: var(--Grayish-Blue);
+}
+@media (max-width: 47.9375rem) {
+    .track-snippets .grid {
+        grid-template-columns: minmax(15.625rem, 25rem);justify-content: center;
+    }
+    .track-snippets .grid img {
+        max-width: 100%;
+        transform: translateX(0);
+        padding-inline: 1.25rem;
+    }
+    .track-snippets .grid .infos .box {
+        text-align: center;
+    }
+    
+}
+/* End Track Snippets Section */
+/* Start Access Clipboard Section */
+.access-clipboard {
+    text-align: center;
+}
+.access-clipboard img {
+    width: 50rem;
+    max-width: 100%;
+}
+/* End Access Clipboard Section */
+/* Start Supercharge Workflow Section */
+.supercharge .options {
+    max-width: 62.5rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+    gap: 1.875rem;
+    margin-inline: auto;
+    text-align: center;
+    margin-bottom: 3.75rem;
+}
+.supercharge .options .box {
+    padding-inline: 1.875rem;
+}
+.supercharge .options .box img {
+    height: 2rem;
+    transition: 1s;
+}
+.supercharge .options .box:hover img {
+    transform: rotateY(360deg);
+}
+.supercharge .options .box h3 {
+    margin-block: 1.875rem 0.9375rem;
+    color: var(--Dark-Grayish-Blue);
+}
+.supercharge .options .box p {
+    color: var(--Grayish-Blue);
+    font-size: 0.875rem;
+    line-height: 1.8;
+}
+.supercharge .support {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 3.125rem;
+    margin-inline: 1.875rem;
+}
+.supercharge .support img{
+    transition: 1s;
+}
+.supercharge .support img:hover {
+    transform: scale(1.1);
+}
+/* End Supercharge Workflow Section */
+/* Start .footer-container */
+footer {
+    background-color: hsl(171deg 66% 44% / 7%);
+    padding-bottom: 10px;
+}
+.footer-container {
+    display: flex;
+    align-items: center;
+}
+.footer-container .social-media,
+.footer-container .copyright {
+    margin-inline: 2.5rem;
+    min-width: 9.375rem;
+    text-align: center;
+}
+.footer-container .about {
+    flex: 1;
+}
+.footer-container .about ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(7.3125rem, 1fr));
+    color: var(--Dark-Grayish-Blue);
+    grid-auto-rows: 2.5rem;
+    column-gap: 3.125rem;
+    align-items: center;
+}
+.footer-container .social-media a {
+    text-align: left;
+}
+.footer-container .social-media a:not(:last-of-type) {
+    margin-right: 1.25rem;
+}
+@media (max-width: 47.9375rem) {
+    .footer-container {
+        display: block;
+    }
+    .footer-container .about ul {
+        grid-template-columns: minmax(15.625rem, 25rem);
+        text-align: center;
+        justify-content: center;
+        margin-bottom: 1.25rem;
+    }
+}
+/* End .footer-container */
